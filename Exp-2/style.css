@@ -1,0 +1,24 @@
+#displayBoard{
+    padding: 20px;
+    background-color: red;
+    border: 1 px solid black;
+    margin: 10px;
+}
+
+.box1{
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 30px;
+    float: left;
+}
+
+.black{
+    background-color: black;
+    color: white;
+}
+.white{
+    background-color: white;
+    color: black;
+}
