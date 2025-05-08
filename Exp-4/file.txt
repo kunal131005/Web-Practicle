@@ -1,0 +1,88 @@
+1. Set up a Git Repository
+        =>Initialize a new Git repository:
+            git init
+        =>Clone an existing Git repository:
+            git clone <repository_url>
+2. Make Commits
+        =>Stage files for commit (add specific files or all):
+            git add <file_name>  # Add a specific file
+            git add .            # Add all changes
+        =>Commit changes with a message:
+            git commit -m "Your commit message"
+3. Work with Branches
+        =>Create a new branch:
+            git branch <branch_name>
+        =>Switch to a branch:
+            git checkout <branch_name>
+        =>Create and switch to a new branch in one step:
+            git checkout -b <branch_name>
+        =>List all branches (local):
+            git branch
+        =>List all branches (remote and local):
+            git branch -a
+4. Merge Changes
+        =>Merge changes from one branch into the current branch:
+            git merge <branch_name>
+
+Resolve conflicts (if any) and commit the merge.
+
+5. Push Updates to a Remote Repository
+        =>Push a branch to the remote repository:
+            git push origin <branch_name>
+        =>Push changes to the default branch (usually main or master):
+            git push origin main
+        =>Set upstream for the current branch (if not already set):
+            git push --set-upstream origin <branch_name>
+6. Use a .gitignore File
+        =>Create a .gitignore file: This file should be placed at the root of your project.
+        =>Example content for a .gitignore file:
+            # Ignore node_modules
+            node_modules/
+
+            # Ignore log files
+            *.log
+
+            # Ignore temporary files
+            *.tmp
+        =>Ensure .gitignore is added to the repository:
+            git add .gitignore
+            git commit -m "Add .gitignore file"
+7. View Git History
+        =>View the commit history:
+            git log
+        =>View a simplified log with one line per commit:
+            git log --oneline
+        =>View the history of a specific file:
+            git log <file_name>
+        =>View changes in the last commit:
+            git show
+8. Collaborate on a Project
+        =>Pull the latest changes from the remote repository:
+            git pull origin <branch_name>
+        =>Fork a repository (on GitHub) and clone it to your local machine:
+
+        Go to the GitHub page of the repository.
+
+        Click on Fork to create a copy in your account.
+
+        =>Clone the forked repository:
+            git clone <your_forked_repository_url>
+        =>Push changes to your forked repository:
+            git push origin <branch_name>
+        =>Create a pull request (PR):
+            After pushing your changes to your forked repository, go to GitHub and open a pull request to the original repository.
+
+=>Example Workflow:
+        =>Clone a repo:
+            git clone https://github.com/user/project.git
+            cd project
+        =>Create a new branch:
+            git checkout -b new-feature
+            Make changes and stage them:
+            git add .
+        =>Commit the changes:
+            git commit -m "Add new feature"
+        =>Push the changes:
+            git push origin new-feature
+        =>Merge the feature branch to main:
+        On GitHub or using a pull request, merge your feature branch into the main branch.
