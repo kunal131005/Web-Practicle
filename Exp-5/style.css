@@ -1,0 +1,70 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+center {
+    margin-top: 30px;
+}
+.inp {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 8px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #45a049;
+}
+.MovieDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    padding: 20px;
+}
+.movie-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.movie-card:hover {
+    transform: scale(1.05);
+}
+.movie-card img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+.movie-card h5 {
+    font-size: 14px;
+    color: gray;
+    margin: 5px 0;
+}
+.movie-card p {
+    font-size: 14px;
+    color: #333;
+}
