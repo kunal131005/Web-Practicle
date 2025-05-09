@@ -10,6 +10,7 @@ const Weather = () => {
         axios.get(`http://api.weatherapi.com/v1/current.json?key=4179994c89c04061bd131521250905&q=${inp}`)
             .then((res) => {
                 setWeather(res.data);
+                setinp('')
             })
             .catch((err) => {
                 console.error(err);
