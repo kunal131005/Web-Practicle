@@ -1,0 +1,64 @@
+/* Weather.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inp {
+    padding: 10px 15px;
+    width: 250px;
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+.weather-info {
+    background-color: white;
+    margin: 30px auto;
+    padding: 20px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info img {
+    width: 64px;
+    height: 64px;
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-info p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #555;
+}
