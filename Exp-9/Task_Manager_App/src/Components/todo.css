@@ -1,0 +1,149 @@
+body {
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px red, -2px -2px 5px blue;
+    min-height: 100vh;
+    width: 90%;        
+    max-width: 700px;  
+    margin: 100px auto 50px auto;
+    margin: auto;
+    background-color: beige;
+    margin-top: 100px;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #291d1b;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 20px;
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .inp {
+        width: 80%;
+    }
+
+    .btn {
+        width: 80px;
+        font-size: 14px;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+    .btnGroup button {
+        font-size: 18px;
+    }
+}
+
+h1 {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    color: #3e2723;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+h1:hover {
+    background: linear-gradient(to right, #4caf50, #81c784);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.inp {
+    border: none;
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin: 10px;
+    font-family: cursive;
+    background-color: #fff8e1;
+    color: #4e342e;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.inp:focus {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    background-color: #fff3d1;
+}
+
+.taskList {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 450px;
+}
+
+.taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef9e7;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin: 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.taskList li:hover {
+    background-color: #fff3cd;
+}
+
+.content {
+    font-size: 18px;
+    color: #333;
+    flex: 1;
+    text-align: left;
+}
+
+.btnGroup {
+    display: flex;
+    gap: 8px;
+}
+
+.btnGroup button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.btnGroup button:hover {
+    transform: scale(1.2);
+}
+
+.upBtn {
+    color: #28a745;
+}
+
+.downBtn {
+    color: #ffc107;
+}
+
+.deleteBtn {
+    color: #dc3545;
+}
+
+.completed .content {
+  text-decoration: line-through;
+  color: gray;
+}
