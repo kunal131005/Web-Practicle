@@ -1,0 +1,81 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #d1d5db);
+    margin: 0;
+    padding: 20px;
+}
+
+center {
+    margin-bottom: 30px;
+}
+
+input.inp {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+.MusicDetails {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.MusicDetails div {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.MusicDetails div:hover {
+    transform: translateY(-5px);
+}
+
+.MusicDetails img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #111827;
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+    color: #374151;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
